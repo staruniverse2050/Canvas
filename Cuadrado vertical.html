@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+<script>
+
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+function dibujar(x,y){
+	const pantalla = document.querySelector("canvas");
+	const pincel = pantalla.getContext("2d");
+	pincel.fillStyle = "violet";
+	pincel.fillRect(x,y,50,50);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(x,y,50,50);
+}
+dibujar(0,0);
+dibujar(0,50);
+dibujar(0,100);
+dibujar(0,150);
+
+</script>
